@@ -341,7 +341,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 48464311}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1061655318}
+        m_TargetAssemblyTypeName: DepositEventController, Assembly-CSharp
+        m_MethodName: DepositWithBtn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &48464311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,6 +539,7 @@ GameObject:
   - component: {fileID: 94405919}
   - component: {fileID: 94405918}
   - component: {fileID: 94405917}
+  - component: {fileID: 94405920}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -624,6 +637,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &94405920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94405915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6f1e1683ea8a043ab47856a10dd390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usrTxt: {fileID: 1164998011}
+  cash: {fileID: 1903895836}
+  balance: {fileID: 1732045383}
+  panel: {fileID: 480360874}
 --- !u!1 &123707238
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,7 +736,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 123707241}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1061655318}
+        m_TargetAssemblyTypeName: DepositEventController, Assembly-CSharp
+        m_MethodName: DepositWithBtn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &123707241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1567,7 +1608,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 282007759}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 94405920}
+        m_TargetAssemblyTypeName: WithdrawEventController, Assembly-CSharp
+        m_MethodName: WithdrawWithBtn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &282007759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3028,7 +3081,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 565163189}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1061655318}
+        m_TargetAssemblyTypeName: DepositEventController, Assembly-CSharp
+        m_MethodName: DepositWithBtn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &565163189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3158,9 +3223,9 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3217,7 +3282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &673408245
 Transform:
   m_ObjectHideFlags: 0
@@ -3317,7 +3382,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 673898751}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 94405920}
+        m_TargetAssemblyTypeName: WithdrawEventController, Assembly-CSharp
+        m_MethodName: WithdrawWithBtn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &673898751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3885,9 +3962,9 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3973,6 +4050,7 @@ GameObject:
   - component: {fileID: 1061655317}
   - component: {fileID: 1061655316}
   - component: {fileID: 1061655315}
+  - component: {fileID: 1061655318}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4070,6 +4148,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1061655318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061655313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14595616b4f35554484669f85ddedcac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usrTxt: {fileID: 180849169}
+  cash: {fileID: 1903895836}
+  balance: {fileID: 1732045383}
+  panel: {fileID: 480360874}
 --- !u!1 &1087080785
 GameObject:
   m_ObjectHideFlags: 0
@@ -4755,7 +4849,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1242623757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4924,7 +5018,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1250006633}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 94405920}
+        m_TargetAssemblyTypeName: WithdrawEventController, Assembly-CSharp
+        m_MethodName: WithdrawWithBtn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1250006633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5574,7 +5680,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1673815754}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 94405920}
+        m_TargetAssemblyTypeName: WithdrawEventController, Assembly-CSharp
+        m_MethodName: WithdrawWithUsrTxt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1673815754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5831,7 +5949,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1763001258}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1061655318}
+        m_TargetAssemblyTypeName: DepositEventController, Assembly-CSharp
+        m_MethodName: DepositWithUsrTxt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1763001258
 MonoBehaviour:
   m_ObjectHideFlags: 0
