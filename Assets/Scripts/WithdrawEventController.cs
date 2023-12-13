@@ -15,13 +15,10 @@ public class WithdrawEventController : MonoBehaviour
     private int currBalance;
 
 
-    private void Start()
+    public void WithdrawWithUsrTxt()
     {
         currCash = int.Parse(cash.text);
         currBalance = int.Parse(balance.text);
-    }
-    public void WithdrawWithUsrTxt()
-    {
         if (currBalance - int.Parse(usrTxt.text) >= 0)
         {
             currCash += int.Parse(usrTxt.text);
@@ -33,11 +30,14 @@ public class WithdrawEventController : MonoBehaviour
         {
             panel.SetActive(true);
         }
+        usrTxt.text = "";
 
     }
 
     public void WithdrawWithBtn(int number)
     {
+        currCash = int.Parse(cash.text);
+        currBalance = int.Parse(balance.text);
         if (currBalance - number >= 0)
         {
             currCash += number;

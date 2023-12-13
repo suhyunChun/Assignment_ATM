@@ -17,13 +17,11 @@ public class DepositEventController : MonoBehaviour
     private int currBalance;
 
 
-    private void Start()
+
+    public void DepositWithUsrTxt()
     {
         currCash = int.Parse(cash.text);
         currBalance = int.Parse(balance.text);
-    }
-    public void DepositWithUsrTxt()
-    {
         if (currCash - int.Parse(usrTxt.text) >= 0)
         {
             currBalance += int.Parse(usrTxt.text);
@@ -35,10 +33,13 @@ public class DepositEventController : MonoBehaviour
         {
             panel.SetActive(true);
         }
+        usrTxt.text = "";
 
     }
 
     public void DepositWithBtn(int number) {
+        currCash = int.Parse(cash.text);
+        currBalance = int.Parse(balance.text);
         if (currCash - number >= 0)
         {
             currBalance += number;
