@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
     public GameObject WContainer;
 
     public UserData userData;
-
+    [SerializeField] private TextMeshProUGUI cash;
+    [SerializeField] private TextMeshProUGUI balance;
 
     private void Awake()
     {
@@ -22,6 +23,13 @@ public class GameManager : MonoBehaviour
     }
 
 
+    private void Start()
+    {
+        cash.text = userData.cash.ToString();
+        balance.text = userData.balance.ToString();
+
+        
+    }
 
 
 

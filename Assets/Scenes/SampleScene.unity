@@ -5789,7 +5789,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 50000
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6034,6 +6034,8 @@ MonoBehaviour:
   DContainer: {fileID: 673408244}
   WContainer: {fileID: 1060272010}
   userData: {fileID: 11400000, guid: 632e881e7b0597542a162c1ef1f7ed7f, type: 2}
+  cash: {fileID: 1903895836}
+  balance: {fileID: 1732045383}
 --- !u!4 &1770266817
 Transform:
   m_ObjectHideFlags: 0
@@ -6536,7 +6538,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100000
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
