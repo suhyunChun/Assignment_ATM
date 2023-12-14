@@ -11,11 +11,19 @@ public class GameManager : MonoBehaviour
     public GameObject BtnContainer;
     public GameObject DContainer;
     public GameObject WContainer;
+
+    public UserData userData;
+
+
     private void Awake()
     {
         I = this; //ΩÃ±€≈Ê 
        
     }
+
+
+
+
 
     public void GoBack()
     {

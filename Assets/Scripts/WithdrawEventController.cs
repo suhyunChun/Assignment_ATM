@@ -6,25 +6,30 @@ using TMPro;
 public class WithdrawEventController : MonoBehaviour
 {
     [SerializeField] private TMP_InputField usrTxt;
-    [SerializeField] private TextMeshProUGUI cash;
-    [SerializeField] private TextMeshProUGUI balance;
+    [SerializeField] private TMP_Text cash;
+    [SerializeField] private TMP_Text balance;
     public GameObject panel;
     // Start is called before the first frame update
 
-    private int currCash;
-    private int currBalance;
+//    private int currCash;
+//    private int currBalance;
 
+    private void Start()
+    {
+        cash.text = GameManager.I.userData.cash.ToString();
+        balance.text = GameManager.I.userData.balance.ToString();
+    }
 
     public void WithdrawWithUsrTxt()
     {
-        currCash = int.Parse(cash.text);
-        currBalance = int.Parse(balance.text);
-        if (currBalance - int.Parse(usrTxt.text) >= 0)
+     //   currCash = int.Parse(cash.text);
+     //   currBalance = int.Parse(balance.text);
+        if (GameManager.I.userData.balance - int.Parse(usrTxt.text) >= 0)
         {
-            currCash += int.Parse(usrTxt.text);
-            currBalance -= int.Parse(usrTxt.text);
-            balance.text = currBalance.ToString();
-            cash.text = currCash.ToString();
+            GameManager.I.userData.cash += int.Parse(usrTxt.text);
+            GameManager.I.userData.balance -= int.Parse(usrTxt.text);
+            balance.text = GameManager.I.userData.balance.ToString();
+            cash.text = GameManager.I.userData.cash.ToString();
         }
         else
         {
@@ -36,14 +41,14 @@ public class WithdrawEventController : MonoBehaviour
 
     public void WithdrawWithBtn(int number)
     {
-        currCash = int.Parse(cash.text);
-        currBalance = int.Parse(balance.text);
-        if (currBalance - number >= 0)
+      //  currCash = int.Parse(cash.text);
+      //  currBalance = int.Parse(balance.text);
+        if (GameManager.I.userData.balance - number >= 0)
         {
-            currCash += number;
-            currBalance -= number;
-            balance.text = currBalance.ToString();
-            cash.text = currCash.ToString();
+            GameManager.I.userData.cash += number;
+            GameManager.I.userData.balance -= number;
+            balance.text = GameManager.I.userData.balance.ToString();
+            cash.text = GameManager.I.userData.cash.ToString();
         }
         else
         {

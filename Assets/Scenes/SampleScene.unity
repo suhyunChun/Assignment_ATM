@@ -2463,7 +2463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &480360875
 Transform:
   m_ObjectHideFlags: 0
@@ -6033,6 +6033,7 @@ MonoBehaviour:
   BtnContainer: {fileID: 1242623756}
   DContainer: {fileID: 673408244}
   WContainer: {fileID: 1060272010}
+  userData: {fileID: 11400000, guid: 632e881e7b0597542a162c1ef1f7ed7f, type: 2}
 --- !u!4 &1770266817
 Transform:
   m_ObjectHideFlags: 0

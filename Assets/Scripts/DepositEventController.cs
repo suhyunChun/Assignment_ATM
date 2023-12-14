@@ -13,21 +13,26 @@ public class DepositEventController : MonoBehaviour
     public GameObject panel;
     // Start is called before the first frame update
 
-    private int currCash;
-    private int currBalance;
+    
+    //private int currCash;
+    //private int currBalance;
 
-
+    private void Start()
+    {
+        cash.text = GameManager.I.userData.cash.ToString();
+        balance.text = GameManager.I.userData.balance.ToString();
+    }
 
     public void DepositWithUsrTxt()
     {
-        currCash = int.Parse(cash.text);
-        currBalance = int.Parse(balance.text);
-        if (currCash - int.Parse(usrTxt.text) >= 0)
+//        currCash = int.Parse(cash.text);
+//        currBalance = int.Parse(balance.text);
+        if (GameManager.I.userData.cash - int.Parse(usrTxt.text) >= 0)
         {
-            currBalance += int.Parse(usrTxt.text);
-            currCash -= int.Parse(usrTxt.text);
-            balance.text = currBalance.ToString();
-            cash.text = currCash.ToString();
+            GameManager.I.userData.balance += int.Parse(usrTxt.text);
+            GameManager.I.userData.cash -= int.Parse(usrTxt.text);
+            balance.text = GameManager.I.userData.balance.ToString();
+            cash.text = GameManager.I.userData.cash.ToString();
         }
         else
         {
@@ -38,14 +43,14 @@ public class DepositEventController : MonoBehaviour
     }
 
     public void DepositWithBtn(int number) {
-        currCash = int.Parse(cash.text);
-        currBalance = int.Parse(balance.text);
-        if (currCash - number >= 0)
+ //       currCash = int.Parse(cash.text);
+ //       currBalance = int.Parse(balance.text);
+        if (GameManager.I.userData.cash - number >= 0)
         {
-            currBalance += number;
-            currCash -= number;
-            balance.text = currBalance.ToString();
-            cash.text = currCash.ToString();
+            GameManager.I.userData.balance += number;
+            GameManager.I.userData.cash -= number;
+            balance.text = GameManager.I.userData.balance.ToString();
+            cash.text = GameManager.I.userData.cash.ToString();
         }
         else
         {
